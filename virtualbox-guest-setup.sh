@@ -43,8 +43,8 @@ iface $PROVIDER_INTERFACE_NAME inet manual
   down ip link set dev $PROVIDER_INTERFACE_NAME down
 EOF
 
-pvcreate /dev/sdc
-vgcreate os-data /dev/sdc
+pvcreate /dev/sdb
+vgcreate os-data /dev/sdb
 lvcreate -L 2G -n swift11 os-data
 lvcreate -L 2G -n swift12 os-data
 lvcreate -L 2G -n swift21 os-data
