@@ -2,7 +2,7 @@
 
 # Debug options to enable bash trace with output to file descriptor 1 (common output)
 BASH_XTRACEFD="1"
-PS4='$LINENO: '
+PS4='+ ${BASH_SOURCE[0]##*/}:$LINENO '
 set -x
 
 export LC_TYPE="UTF-8"
