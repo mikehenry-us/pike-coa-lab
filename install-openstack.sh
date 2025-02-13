@@ -2,7 +2,7 @@
 
 # Debuging options for this script, tracing output is sent to file descriptor 2 (where typical error messages go)
 BASH_XTRACEFD="2"
-PS4='$LINENO: '
+PS4='+ ${BASH_SOURCE[0]##*/}:$LINENO '
 set -x
 
 
